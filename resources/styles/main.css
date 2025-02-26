@@ -2,31 +2,6 @@ footer {
     background-color: #dedede;
     text-align: center;
 }
-#mainNav {
-    background-color: #a1ff00;
-    height: 50px;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-}
-#mainNav button {
-    flex: 1;
-    background-color: black;
-    color: #a1ff00;
-    border: none;
-    height: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-#mainNav button:hover {
-    background-color: #a1ff00;
-    color: black;
-}
-#mainNav button img {
-    padding: 1px 1px;
-    height: 50px;
-    width: 50px;
-}
 body {
     background-color: #383838;
     padding: 10px;
@@ -35,4 +10,7 @@ body {
     border: none;
     color: #a1ff00;
     padding-top: 5px;
+}
+h2 {
+    text-align: center;
 }

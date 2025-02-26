@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Navbar Styling */
+.mainNav {
+    display: flex;
+    justify-content: space-around;
+    background: #a1ff00;
+}
+
+.mainNav button {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mainNav a:hover {
+    color: #a1ff00;
+    background-color: black;
+}
+.mainNav button {
+    flex: 1;
+    background-color: black;
+    color: #a1ff00;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.mainNav button:hover {
+    background-color: #a1ff00;
+    color: black;
+}
+.mainNav img {
+    padding: 1px 1px;
+    width: fit-content;
+}
+h1 {
+    color: #a1ff00;
+}
