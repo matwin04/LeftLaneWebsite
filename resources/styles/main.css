@@ -28,5 +28,11 @@ footer {
     width: 50px;
 }
 body {
-    background-color: black
+    background-color: #383838;
+    padding: 10px;
+}
+.main {
+    border: none;
+    color: #a1ff00;
+    padding-top: 5px;
 }
