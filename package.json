@@ -1,0 +1,26 @@
+{
+  "name": "leftlanewebsite",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/f284501c-d81d-4f7d-a2be-7ddba42f6408/deploy-status)](https://app.netlify.com/sites/leftlanecommunity/deploys)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matwin04/LeftLaneWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matwin04/LeftLaneWebsite/issues"
+  },
+  "homepage": "https://github.com/matwin04/LeftLaneWebsite#readme",
+  "dependencies": {
+    "axios": "^1.8.1",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "path": "^0.12.7"
+  }
+}
