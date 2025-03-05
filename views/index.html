@@ -1,17 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
     <title>{{title}}</title>
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="icon" href="/resources/images/favicon.ico" />
+    <link rel="stylesheet" href="/resources/styles/main.css" />
+    <link rel="stylesheet" href="/resources/styles/navbar.css" />
 </head>
 <body>
-    <nav>
-        <a href="/about">About</a>
-    </nav>
-    <h1>Welcome to My Handlebars Express Site</h1>
-    <h2>{{title}}</h2>
-    <p>This site is powered by Express.js and Handlebars.</p>
+    {{> navbar}}
+    <h2>Welcome to the Left Lane</h2>
+    <p>Hello LeftLanners</p>
+    <div id="upcomingEvents"></div>
+
+    <footer>
+        <p id="ownerTag">2025 LeftLane Community San Diego CA</p>
+        <p id="designerTag">Website Designed By M Winer</p>
+    </footer>
 </body>
 </html>

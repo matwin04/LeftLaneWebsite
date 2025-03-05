@@ -15,14 +15,14 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Home Route
-app.get('/', async (req, res) => {
-    res.render('index', { title: 'LeftLane Community' });
-});
-app.get('/about', async (req, res) => {
-    res.render('index', { title: 'About' });
-});
-app.get('/contact', async (req, res) => {
-    res.render('index', { title: 'Contact Us' });
-});
+app.get('/', (req, res) => res.render('index', { title: 'LeftLane Community' }));
+app.get('/events', (req, res) => res.render('events', { title: 'Events' }));
+app.get('/contact', (req, res) => res.render('contact', { title: 'Contact Us' }));
+
 // Vercel support: Export Express app
 module.exports = app;
+
+// Start server locally
+if (require.main === module) {
+    app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+}
