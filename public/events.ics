@@ -1,0 +1,24 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Left Lane Community//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:1@leftlanecommunity.com
+DTSTAMP:20250305T120000Z
+DTSTART:20250310T180000Z
+DTEND:20250310T220000Z
+SUMMARY:Sunset Drive & Chill
+DESCRIPTION:Join us for a relaxing drive along the coast!
+LOCATION:San Diego, CA
+END:VEVENT
+BEGIN:VEVENT
+UID:4@leftlanecommunity.com
+DTSTAMP:20250305T120000Z
+DTSTART:20250321T190000Z
+DTEND:20250321T220000Z
+SUMMARY:Left Lane Supercar Party
+DESCRIPTION:Live DJ, 2-Step Competition, and Taco Stand! Join us for an epic car meet.
+LOCATION:1235 Pierre Way - Unit 100, El Cajon, CA
+END:VEVENT
+
+
+END:VCALENDAR

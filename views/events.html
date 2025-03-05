@@ -6,8 +6,36 @@
         <link rel="icon" href="/images/favicon.ico" />
         <link rel="stylesheet" href="/styles/main.css" />
         <link rel="stylesheet" href="/styles/nav.css" />
+        <link rel="stylesheet" href="/public/styles/main.css"/>
     </head>
     <body>
         {{> navbar}}
+        <h1>Events</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each events}}
+                <tr>
+                    <td>{{this.summary}}</td>
+                    <td>{{this.start}}</td>
+                    <td>{{this.time}}</td>
+                    <td>{{this.location}}</td>
+                    <td>{{this.description}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <p>Subscribe to our calednar:
+            <a href="/calendar.ics">Download .ics</a>
+        </p>
     </body>
 </html>

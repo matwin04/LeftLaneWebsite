@@ -23,3 +23,41 @@ h1 {
 p {
     font-size: 1.2em;
 }
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    border: 2px solid #a1ff00;
+    background: #1b1b1b;
+    color: white;
+    text-align: left;
+    overflow: hidden;
+}
+thead {
+    background-color: #a1ff00;
+    color: black;
+}
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #333;
+}
+tbody tr:nth-child(even) {
+    background: #222;
+}
+tbody tr:nth-child(odd) {
+    background: #121212; 
+}
+.subscribe-link {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 1.2em;
+    color: #a1ff00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.subscribe-link:hover {
+    color: white;
+    text-decoration: underline;
+}
