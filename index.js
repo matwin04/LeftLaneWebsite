@@ -18,7 +18,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", (req, res) => res.render("index", { title: "LeftLane Community" }));
 app.get("/events", (req, res) => res.render("events", { title: "Events" }));
 app.get("/contact", (req, res) => res.render("contact", { title: "Contact Us" }));
-
+app.get("/socials",(req,res)=>res.render("socials"));
 // Vercel support: Export Express app
 module.exports = app;
 
