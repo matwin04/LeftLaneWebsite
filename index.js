@@ -1,16 +1,22 @@
-const express = require("express");
-const path = require("path");
-const { engine } = require("express-handlebars");
-const axios = require("axios");
-const ical = require("ical");
+const express = require('express');
+const path = require('path');
+const { engine } = require('express-handlebars');
 const fs = require('fs');
-const app = express();
-const PORT = process.env.PORT || 8088;
+const ical = require('ical');
+const nodemailer = require('nodemailer');
+const bcrypt = require('bcrypt');
+const session = require('express-session');
+
+
+const ADMIN_PASSWORD_HASH = bcrypt.hashSync(process.env.PASSWORD||"test", 10);
 
 // Configure Handlebars to use `.html` instead of `.hbs`
 app.engine("html", engine({ extname: ".html", defaultLayout: false }));
 app.set("view engine", "html");
 app.set("views", path.join(__dirname, "views"));
+
+
+const ADMIN_PASSWORD_HASH = bcrypt.hashSync(process.env.PASSWORD||"test", 10);
 
 // Serve static files (CSS, JS, JSON)
 app.use(express.static(path.join(__dirname, "public")));
