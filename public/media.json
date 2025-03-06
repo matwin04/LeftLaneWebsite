@@ -2,22 +2,22 @@
     "images": [
         {
             "id": 0,
-            "path": "/images/noyola_g_.jpeg",
+            "path": "/images/cars/noyola_g_.jpeg",
             "creator": "@noyola_g_"
         },
         {
             "id": 1,
-            "path": "/images/carsbytyler__1739130843_3564410319076343789_56578559633.jpg",
+            "path": "/images/cars/carsbytyler__1739130843_3564410319076343789_56578559633.jpg",
             "creator": "@carsbytyler_"
         },
         {
             "id": 2,
-            "path": "/images/carsbytyler__1739130843_3564410319068070282_56578559633.jpg",
+            "path": "/images/cars/carsbytyler__1739130843_3564410319068070282_56578559633.jpg",
             "creator": "@carsbytyler_"
         },
         {
             "id": 3,
-            "path": "/images/carsbytyler__1739130843_3564410319067962611_56578559633.jpg",
+            "path": "/images/cars/carsbytyler__1739130843_3564410319067962611_56578559633.jpg",
             "creator": "@carsbytyler_"
         }
     ],

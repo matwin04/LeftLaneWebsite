@@ -5,7 +5,7 @@
         <title>{{title}}</title>
 
         <meta property="og:title" content="LeftLane Community" />
-        
+
         <link rel="icon" href="/images/LLfavicon.ico" />
         <link rel="stylesheet" href="/styles/main.css" />
         <link rel="stylesheet" href="/styles/navbar.css" />
@@ -15,48 +15,51 @@
     </head>
     <body>
         {{> navbar}}
-        <h2>Welcome to the Left Lane</h2>
-        <p>Hello LeftLanners</p>
-        <div id="upcomingEvents"></div>
-        <section class="video-section">
+        <section class="hero">
             <video autoplay muted loop id="bg-video">
-                <source src="{{video}}" />
+                <source src="{{video}}" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
+            <div class="overlay">
+                <h1>Welcome to Left Lane</h1>
+                <p>San Diego's Premiere Car Community</p>
+            </div>
         </section>
 
-        <section class="content-section">
+        <!-- Content Sections -->
+        <section class="content-section" id="section1">
             <div class="content">
                 <div class="text-left">
-                    <h2>Welcome!!</h2>
+                    <h2>About Left Lane</h2>
+                    <p>
+                        Left Lane is more than just a car meet—it's a community of enthusiasts who live for the thrill
+                        of the drive. Join us for exclusive meets, tunnel runs, and more.
+                    </p>
                 </div>
                 <div class="image-right">
                     <img src="{{image1}}" alt="Car Meet" />
+                    <p class="image-creator">📸 Photo by {{image1Creator}}</p>
                 </div>
             </div>
         </section>
 
-        <section class="content-section">
+        <section class="content-section" id="section2">
             <div class="content">
                 <div class="image-left">
                     <img src="{{image2}}" alt="Supercars" />
+                    <p class="image-creator">📸 Photo by {{image2Creator}}</p>
                 </div>
                 <div class="text-right">
-                    <h2>{{section2.title}}</h2>
-                    <p>{{section2.text}}</p>
+                    <h2>Experience the Thrill</h2>
+                    <p>
+                        From late-night tunnel runs to daytime rallies, Left Lane offers something for every car
+                        enthusiast.
+                    </p>
                 </div>
             </div>
         </section>
 
         <footer>
-            <script>
-                window.va =
-                    window.va ||
-                    function () {
-                        (window.vaq = window.vaq || []).push(arguments);
-                    };
-            </script>
-            <script defer src="/_vercel/insights/script.js"></script>
             <p id="ownerTag">2025 LeftLane Community San Diego CA</p>
             <p id="designerTag">Website Designed By M Winer</p>
         </footer>
