@@ -6,7 +6,8 @@ const ical = require('ical');
 const nodemailer = require('nodemailer');
 const bcrypt = require('bcrypt');
 const session = require('express-session');
-
+const app = express(); // ✅ Define `app` before using it!
+const PORT = process.env.PORT || 8088;
 
 const ADMIN_PASSWORD_HASH = bcrypt.hashSync(process.env.PASSWORD||"test", 10);
 
@@ -15,10 +16,7 @@ app.engine("html", engine({ extname: ".html", defaultLayout: false }));
 app.set("view engine", "html");
 app.set("views", path.join(__dirname, "views"));
 
-
-const ADMIN_PASSWORD_HASH = bcrypt.hashSync(process.env.PASSWORD||"test", 10);
-
-// Serve static files (CSS, JS, JSON)
+// Serve static files
 app.use(express.static(path.join(__dirname, "public")));
 
 
